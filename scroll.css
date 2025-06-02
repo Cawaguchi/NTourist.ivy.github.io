@@ -1,0 +1,59 @@
+
+/*スライダー操作*/
+.slider-container {
+    position: relative;
+    width: 1000%;
+    max-width: 1500px;
+    overflow: hidden;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.slider {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+}
+
+.slider-image {
+    width: 100%;
+    display: none;
+}
+
+.slider-image.active {
+    display: block;
+}
+
+.controls {
+    position: absolute;
+    top: 50%;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    transform: translateY(-50%);
+}
+
+.control-btn {
+    background: rgba(0, 0, 0, 0.5);
+    color: white;
+    border: none;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    outline: none;
+    transition: background 0.3s;
+}
+
+.control-btn:hover {
+    background: rgba(0, 0, 0, 0.8);
+}
+
+/*スライダー写真*/
+
+#pht{
+    width:1500px;
+    height:550px;
+}
