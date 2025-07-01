@@ -1,0 +1,238 @@
+/*ヘッダーの説明*/
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    color: #333;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: #ffffff;
+    border-bottom: 1px solid #ddd;
+}
+
+header h1 {
+    font-size: 24px;
+    margin: 0;
+}
+
+.top::before {
+  content: url(photos/Rogs.png);
+  margin-left: 1px;
+  vertical-align: top-left;
+}
+
+
+header nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    gap: 15px;
+}
+
+header nav ul li {
+    margin: 0;
+}
+
+header nav ul li a {
+    text-decoration: none;
+    color: #000;
+}
+
+header .button {
+    background-color: black;
+    color: white;
+    padding: 8px 16px;
+    border: none;
+    border-radius: 4px;
+    text-transform: uppercase;
+
+}
+/*トップに戻るボタン設定*/
+a,a:visited{
+    color:#fff;
+    text-decoration: none;
+}
+a:hover{
+    color:#fff;
+    text-decoration: underline;
+    }
+/*about us インターフェース設定*/
+.introp {
+  background: #ccd5fb url(photos/introb.png) repeat;
+}
+.introa{
+  background: #377FB6;
+}
+.white{
+    background-color: #ffffff6e;
+    margin-left:40px;
+    margin-right:40px;
+    padding: 10px 10px;
+
+}
+/*文字の設定*/
+.htitle {
+    color:#ffffff;
+    text-align:center;
+    font-family:'游明朝';
+}
+.zen-maru-gothic-bold {
+  font-family: "Zen Maru Gothic", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+}
+/*予約画面*/
+.introtex{
+    margin-left:40px;
+    color:#ffffff;
+    text-align: center;
+}
+.introtex-small{
+    color:#002fff;
+}
+
+/*ヘッダー,ナビ,フッターの共通設定*/
+header,nav,footer {
+  text-align: center;
+}
+
+/*コンテンツ枠の設定*/
+#contents {
+  display: block;
+  width: 798px;
+  margin: 40px auto;
+  padding: 40px 80px;
+  border: 1px solid ;
+}
+
+/*表組みの設定*/
+.entryTable {
+  width: 100%;
+  margin-bottom: 30px;
+  border: 2px solid #20007ee9;
+  border-collapse: collapse;
+}
+
+.entryTable th,
+.entryTable td {
+  padding: 10px 20px;
+  border: 1px solid #20007ee9;
+}
+.entryTable th {
+  width: 10em;
+  background-color: #4dafffb5;
+  text-align: left;
+}
+.entryTable caption {
+  margin-bottom: 10px;
+}
+
+/*入力フォームの設定*/
+.entryTable input[type="text"],
+.entryTable input[type="email"],
+.entryTable input[type="phone"],
+.entryTable input[type="adress"],
+.entryTable textarea {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #20007ee9;
+  box-sizing: border-box;
+  font-size: 1em;
+}
+.entryTable input[type="text"]:focus,
+.entryTable input[type="email"]:focus,
+.entryTable input[type="phone"]:focus,
+.entryTable input[type="adress"]:focus,
+.entryTable textarea:focus {
+    background-color: #a1d5ff5a;
+    outline: none;
+    border-left: 5px solid #008cff;
+}
+
+/*カーソル形状*/
+label,
+input,
+textarea,
+select {
+  cursor: pointer;
+}
+
+/*ボタンの設定*/
+.entryBtns {
+  text-align: center;
+}
+
+/*ボタンの基本スタイル*/
+.entryBtns input {
+  width: 200px;
+  margin: 0 10px;
+  padding: 10px;
+  background: #fff;
+  border: 2px solid #20007ee9;
+  border-radius: 10px;
+  font-size: 1em;
+}
+
+/*送信ボタン用のスタイル*/
+.entryBtns input[type="submit"] {
+  background: #008cff;
+}
+
+/*ボタンにマウスが乗った時*/
+.entryBtns input:hover {
+  opacity: 0.7;
+}
+/*travel requiresの表組みの設定*/
+.informationTable {
+  width: 100%;
+  margin-bottom: 30px;
+  border: 2px solid #767281e9;
+  border-collapse: collapse;
+  max-width: 700px;
+  margin:40px auto;
+}
+
+.informationTable th,
+.informationTable td {
+  padding: 10px 20px;
+  border: 1px solid #767281e9;
+}
+.informationTable th {
+  width: 10em;
+  background-color: #87aac5ca;
+  text-align: center;
+}
+.informationTable caption {
+  margin-bottom: 10px;
+}
+/*フライトの一例の*/
+.huraito{
+  text-align: center;
+  color:#0332a9;
+  font-size:20px;
+}
+/*季節*/
+nav ul {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    gap: 30px;
+  }
+
+/*季節　画像調整*/
+.season_img {
+    display: block;         /* 画像を中央揃えしやすくします */
+    margin: 10px auto;      /* 上下左右に余白を付与し中央揃え */
+    max-width: 100%;        /* 親要素の幅に収まるように設定 */
+    height: auto;           /* アスペクト比を保ちながら高さを自動調整 */
+    border-radius: 10px;    /* 角を少し丸めてデザイン性を向上（オプション） */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* 軽い影を付ける（オプション） */
+}
+
+
