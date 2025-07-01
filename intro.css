@@ -66,6 +66,9 @@ a:hover{
 .introp {
   background: #ccd5fb url(photos/introb.png) repeat;
 }
+.introa{
+  background: #377FB6;
+}
 .white{
     background-color: #ffffff6e;
     margin-left:40px;
@@ -78,6 +81,11 @@ a:hover{
     color:#ffffff;
     text-align:center;
     font-family:'游明朝';
+}
+.zen-maru-gothic-bold {
+  font-family: "Zen Maru Gothic", sans-serif;
+  font-weight: 700;
+  font-style: normal;
 }
 /*予約画面*/
 .introtex{
@@ -110,6 +118,7 @@ header,nav,footer {
   border: 2px solid #20007ee9;
   border-collapse: collapse;
 }
+
 .entryTable th,
 .entryTable td {
   padding: 10px 20px;
@@ -179,3 +188,51 @@ select {
 .entryBtns input:hover {
   opacity: 0.7;
 }
+/*travel requiresの表組みの設定*/
+.informationTable {
+  width: 100%;
+  margin-bottom: 30px;
+  border: 2px solid #767281e9;
+  border-collapse: collapse;
+  max-width: 700px;
+  margin:40px auto;
+}
+
+.informationTable th,
+.informationTable td {
+  padding: 10px 20px;
+  border: 1px solid #767281e9;
+}
+.informationTable th {
+  width: 10em;
+  background-color: #87aac5ca;
+  text-align: center;
+}
+.informationTable caption {
+  margin-bottom: 10px;
+}
+/*フライトの一例の*/
+.huraito{
+  text-align: center;
+  color:#0332a9;
+  font-size:20px;
+}
+/*季節*/
+nav ul {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    gap: 30px;
+  }
+
+/*季節　画像調整*/
+.season_img {
+    display: block;         /* 画像を中央揃えしやすくします */
+    margin: 10px auto;      /* 上下左右に余白を付与し中央揃え */
+    max-width: 100%;        /* 親要素の幅に収まるように設定 */
+    height: auto;           /* アスペクト比を保ちながら高さを自動調整 */
+    border-radius: 10px;    /* 角を少し丸めてデザイン性を向上（オプション） */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* 軽い影を付ける（オプション） */
+}
+
+

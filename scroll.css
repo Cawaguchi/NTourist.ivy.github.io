@@ -2,21 +2,26 @@
 /*スライダー操作*/
 .slider-container {
     position: relative;
-    width: 1000%;
-    max-width: 1500px;
+    width: 100%; 
+    max-width: 1000px; 
+    height: auto; 
+    margin: auto;
     overflow: hidden;
-    border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    border-radius: 10px; 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* 影 */
 }
 
 .slider {
     display: flex;
     transition: transform 0.5s ease-in-out;
+    width: 100%; 
 }
 
 .slider-image {
-    width: 100%;
+    flex: 0 0 100%;
+    width: 100% auto;
     display: none;
+    object-fit: cover;
 }
 
 .slider-image.active {
@@ -30,11 +35,13 @@
     display: flex;
     justify-content: space-between;
     transform: translateY(-50%);
+
 }
 
 .control-btn {
+    pointer-events: all;
     background: rgba(0, 0, 0, 0.5);
-    color: white;
+    color: #ffffff;
     border: none;
     border-radius: 50%;
     width: 40px;
@@ -53,7 +60,4 @@
 
 /*スライダー写真*/
 
-#pht{
-    width:1500px;
-    height:550px;
-}
+

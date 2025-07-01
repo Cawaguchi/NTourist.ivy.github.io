@@ -1,7 +1,9 @@
 document.addEventListener('DOMContentLoaded', () => {
+
     const images = document.querySelectorAll('.slider-image');
     const nextButton = document.getElementById('next');
     const prevButton = document.getElementById('prev');
+    
     let currentIndex = 0;
 
     function updateSlider(index) {
@@ -22,4 +24,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
     // Initialize the slider with the first image
     updateSlider(currentIndex);
+    // ウィンドウリサイズ時の更新
+    window.addEventListener('resize', updateSlider);
+
 });
