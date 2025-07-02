@@ -24,9 +24,12 @@ document.addEventListener('DOMContentLoaded', () => {
 
     // Initialize the slider with the first image
     updateSlider(currentIndex);
-    // ウィンドウリサイズ時の更新
+
+    // ウィンドウリサイズ時の更新 - 現在のインデックスを渡す
     window.addEventListener('resize', () => {
         updateSlider(currentIndex);
     });
+
+
 
 });
