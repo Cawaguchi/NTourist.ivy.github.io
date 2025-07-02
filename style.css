@@ -216,10 +216,4 @@ footer p {
     margin: 0;
     color: #777;
 }
-/* スマホサイズで画像を切り替え */
-@media screen and (max-width: 768px) {
-    .slider-image {
-        background-image: url('introa.png'); /* スマホ用画像 */
-    }
-}
 
