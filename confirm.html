@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <title>確認画面</title>
+  <link rel="stylesheet" href="intro.css">
+</head>
+<body class="introp">
+  <header><h1 class="top">Ntourist</h1></header>
+  <main id="contents" class="white">
+    <p class="introtex">
+    この度は、Ntouristをご利用いただきまして、誠にありがとうございます。<br>
+    下記の内容でお間違いないかご確認ください。<br>
+    ご入力いただいた内容でよろしければ"送信"を、訂正の場合は"戻る"をそれぞれ押してください。<br>
+    <small>個人情報の取扱・営利を目的とした行為又はその準備を目的とした行為の禁止・取消料規定の適用等について<br>
+    お客様の個人情報は、当該サービスに関してお客様との連絡およびサービスの改善や広告・宣伝・マーケティング等に利用させていただくほか、
+    プライバシーポリシーに記載の範囲内で当社と契約を締結している第三者にお客様の個人情報を提供いたします。<br>
+    その他詳細な当社の個人情報の取扱いについては、予約前にプライバシーポリシーについてを、ご確認、同意のうえ、お申し込みください。<br>
+    ご予約にあたっては、利用規約に記載された禁止事項
+    （例：犯罪的行為、又は犯罪的行為に結び付く行為、もしくはそのおそれのある行為、当社の承諾なく、本サービスを通じて、又は本サービスに関連して、営利を目的とした行為、又はその準備を目的とした行為、等）
+    に該当しない事を承諾された事とします。</small>
+
+    </p>
+    <h2>入力内容の確認</h2>
+    <table class="entryTable">
+      <tr><th>お名前</th><td id="namae"></td></tr>
+      <tr><th>カナ</th><td id="katakana"></td></tr>
+      <tr><th>メール</th><td id="email"></td></tr>
+      <tr><th>電話番号</th><td id="phone"></td></tr>
+      <tr><th>住所</th><td id="adress"></td></tr>
+      <tr><th>人数</th><td id="headcount"></td></tr>
+      <tr><th>出発時期</th><td id="season"></td></tr>
+      <tr><th>旅行期間</th><td id="team"></td></tr>
+      <tr><th>その他ご希望</th><td id="require"></td></tr>
+    </table>
+
+    <form action="complete.html" method="post">
+      <div class="entryBtns">
+        <button type="button" onclick="history.back()">戻る</button>
+        <button type="submit">送信</button>
+      </div>
+    </form>
+    
+  </main>
+
+  <script>
+    document.getElementById('namae').textContent = sessionStorage.getItem('namae');
+    document.getElementById('katakana').textContent = sessionStorage.getItem('katakana');
+    document.getElementById('email').textContent = sessionStorage.getItem('email');
+    document.getElementById('phone').textContent = sessionStorage.getItem('phone');
+    document.getElementById('adress').textContent = sessionStorage.getItem('adress');
+    document.getElementById('headcount').textContent = sessionStorage.getItem('headcount');
+    document.getElementById('season').textContent = sessionStorage.getItem('season');
+    document.getElementById('team').textContent = sessionStorage.getItem('team');
+    document.getElementById('require').textContent = sessionStorage.getItem('require');
+  </script>
+</body>
+</html>
